@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Bihar</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- fonts -->
+  <link rel="stylesheet" href="font/fonts.css">
+  <!-- normalize css -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/utility.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- fevicon -->
+  <link rel="shortcut icon" href="./images/bihar-logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <a href="#" class="to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+  <!-- navbar  -->
+  <nav class="navbar">
+    <div class="container flex">
+      <a href="index.html" class="site-brand">
+        <img src="./images/bihar-logo.png" alt="bihar-logo">
+      </a>
+      <button type="button" id="navbar-show-btn" class="flex">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div id="navbar-collapse">
+        <button type="button" id="navbar-close-btn" class="flex">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="./gallery/gallery.html" class="nav-link">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="./experience/experience.html" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about/about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact/contact.html" class="nav-link">Contact</a>
+          </li>
+          <li>
+            <input type="checkbox" id="theme-toggle-btn">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- end of navbar  -->
+  <!-- header -->
+  <header class="flex">
+    <div class="container">
+      <div class="header-title">
+        <h1>Explore, Experience, Enchant</h1>
+        <p>
+          Bihar is a place full of history and spiritual significance. Located
+            in the eastern part of India, this state is known as the land of
+            monasteries. There are many things that make this place worth
+            visiting for visitors.
+        </p>
+      </div>
+      <div class="header-form">
+        <h2>Your Travel Information:</h2>
+        <form class="flex">
+          <input type="text" class="form-control" placeholder="Your Name">
+          <input type="date" class="form-control" placeholder="Date">
+          <input type="number" class="form-control" placeholder="Total People">
+          <input type="submit" class="btn" value="Search">
+        </form>
+      </div>
+      <div class="video">
+        <video id="video" autoplay loop muted>
+          <source src="./images/travel-video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </header>
+  <!-- header -->
+  <!-- featured section -->
+  <section id="featured" class="py-4">
+    <div class="container">
+      <div class="title-wrap">
+        <span class="sm-title">
+          know about some places before your travel
+        </span>
+        <h2 class="lg-title">Top Destinations</h2>
+      </div>
+      <section id="slides-par">
+        <div class="container">
+          <div class="slides">
+            <a href="./index.html">
+              <div class="slide_1 slide_2">
+                <div class="slide-info">
+                  <p>80 Feet Buddha</p>
+                </div>
+            </a>
+          </div>
+          <a href="">
+            <div class="slide_1 slide_3">
+              <div class="slide-info">
+                <p>Gurpa Hill</p>
+              </div>
+          </a>
+        </div>
+        <a href="">
+          <div class="slide_1 slide_4">
+            <div class="slide-info">
+              <p>Kakolat Waterfall</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="slide_1 slide_5">
+            <div class="slide-info">
+              <p>Daud Khan Fort</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="slide_1 slide_6">
+            <div class="slide-info">
+              <p>Valmiki Tiger Reserve</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="slide_1 slide_7">
+            <div class="slide-info">
+              <p>Ruins Of Nalanda</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="slide_1 slide_8">
+            <div class="slide-info">
+              <p>Vikramshila University</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="slide_1 slide_9">
+            <div class="slide-info">
+              <p>Muchalinda Sarovar</p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="slide_1 slide_10">
+            <div class="slide-info">
+              <p>
+                Amjhar Sharif
+              </p>
+            </div>
+          </div>
+        </a>
+    </div>
+    <div class="btn-all-page">
+      <a href="./destination/destination.html" class="btn-all" target="_blank">Explore All Destinations</a>
+    </div>
+    </div>
+  </section>
+  <!-- end of featured section -->
+  <!-- Circuit section -->
+  <section id="featured" class="py-4">
+    <div class="container">
+      <div class="title-wrap">
+        <span class="sm-title">
+          Explore Bihar's Fascinating Circuits.
+        </span>
+        <h2 class="lg-title">Most Popular Circuits</h2>
+      </div>
+      <div class="featured-row">
+        <div class="featured-item my-2 shadow">
+          <img src="./images/c1.png" alt="featured place">
+          <div class="featured-item-content">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              Buddhist Circuit
+            </span>
+            <div>
+              <p class="text">
+                The Buddhist Circuit is a trail of the sacred footsteps of Lord Buddha and the important places of his
+                life and teachings across Bihar.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="featured-item my-2 shadow">
+          <img src="./images/c2.png" alt="featured place">
+          <div class="featured-item-content">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              Eco Circuit
+            </span>
+            <div>
+              <p class="text">
+                Bihar’s rich natural scenery and wildlife make it an important destination for ecological tourism.
+                Whether it is getting a glimpse of the magnificent big cats or observing the natural wonders in Bihar,
+                the Eco circuit covers it all.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="featured-item my-2 shadow">
+          <img src="./images/c3.png" alt="featured place">
+          <div class="featured-item-content">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              Jain Circuit
+            </span>
+            <div>
+              <p class="text">
+                Bihar is a holy place for the Jains as the last Tirthankara of the Jains was born here. A visit to some
+                of the Jain pilgrim destinations in Bihar offers a view into the life and journey of Lord Mahavira.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="featured-item my-2 shadow">
+          <img src="./images/c4.png" alt="featured place">
+          <div class="featured-item-content">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              Ramayan Circuit
+            </span>
+            <div>
+              <p class="text">
+                Many of the locations mentioned in this legend are in Bihar and considered holy sites for Hindus.
+                Temples depicting the tales of Ram and Sita can be found in this circuit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="featured-item my-2 shadow">
+          <img src="./images/c5.png" alt="featured place">
+          <div class="featured-item-content">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              Sikh Circuit
+            </span>
+            <div>
+              <p class="text">
+                A tour of the Sikh Circuit of Bihar will take you through other gurudwaras and Sikh shrines
+                commemorating the events in the life of the Sikh Guru.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="featured-item my-2 shadow">
+          <img src="./images/c6.png" alt="featured place">
+          <div class="featured-item-content">
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+              Sufi Circuit
+            </span>
+            <div>
+              <p class="text">
+                During the medieval period, the spiritualistic aura enjoyed by Pataliputra (Patna) attracted many Sufi
+                saints who preached in a very humanistic way that made the region a hub of pilgrimage for the devotees
+                of all religions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of circuit section -->
+
+  <!-- services section -->
+  <section id="services" class="py-4">
+    <div class="container">
+      <div class="title-wrap">
+        <span class="sm-title">know about News And Events that we arrange</span>
+        <h2 class="lg-title">News And Events</h2>
+      </div>
+
+      <div class="blog-par">
+        <div class="blog-content">
+          <!-- one div for image and one for info -->
+          <div class="blog-img-par">
+            <img src="./images/bg1.jpg" alt="" class="img-responsive" />
+          </div>
+          <div class="blog-info-par">
+            <div class="info">
+              <p>Roshan Rawat</p>
+              <p>24.01.2024</p>
+            </div>
+            <h4>Lorem ipsum dolor consectetur</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+              natus, deserunt deleniti sapiente omnis ab quas mollitia!
+              Cumque, maxime at.
+            </p>
+          </div>
+        </div>
+        <div class="blog-content">
+          <!-- one div for image and one for info -->
+          <div class="blog-img-par">
+            <img src="./images/bg2.jpg" alt="" class="img-responsive" />
+          </div>
+          <div class="blog-info-par">
+            <div class="info">
+              <p>Roshan Rawat</p>
+              <p>24.01.2024</p>
+            </div>
+            <h4>Lorem ipsum dolor consectetur</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+              natus, deserunt deleniti sapiente omnis ab quas mollitia!
+              Cumque, maxime at.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="blog-par">
+        <div class="blog-content">
+          <!-- one div for image and one for info -->
+          <div class="blog-img-par">
+            <img src="./images/bg4.avif" alt="" class="img-responsive" />
+          </div>
+          <div class="blog-info-par">
+            <div class="info">
+              <p>Roshan Rawat</p>
+              <p>24.01.2024</p>
+            </div>
+            <h4>Lorem ipsum dolor consectetur</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+              natus, deserunt deleniti sapiente omnis ab quas mollitia!
+              Cumque, maxime at.
+            </p>
+          </div>
+        </div>
+        <div class="blog-content">
+          <!-- one div for image and one for info -->
+          <div class="blog-img-par">
+            <img src="./images/bihar-map-img.jpeg" alt="" class="img-responsive" />
+          </div>
+          <div class="blog-info-par">
+            <div class="info">
+              <p>Roshan Rawat</p>
+              <p>24.01.2024</p>
+            </div>
+            <h4>Lorem ipsum dolor consectetur</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+              natus, deserunt deleniti sapiente omnis ab quas mollitia!
+              Cumque, maxime at.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of services section -->
+  <!-- testimonials section -->
+  <section id="testimonials" class="py-4">
+    <div class="container">
+      <div class="title-wrap">
+        <span class="sm-title">what our visitors say about Bihar</span>
+        <h2 class="lg-title">testimonials</h2>
+      </div>
+      <div class="test-row">
+        <div class="test-item">
+          <p class="text">
+            Rajgir is a city located in the Indian state of Bihar. It is considered an important historical and
+            archaeological site, with many Buddhist and Jain temples and monuments. Rajgir is also known for its hot
+            springs, which are believed to have therapeutic properties. The city is located in a picturesque valley
+            surrounded by hills, making it a popular spot for tourists and nature lovers.
+          </p>
+          <div class="test-item-info">
+            <img src="./images/t-1.jpg" alt="testimonial">
+            <div>
+              <h3>Hitesh Choudhry</h3>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="test-item">
+          <p class="text">
+            The Jal Mandir meaning Water Temple, also known as Apapuri, in Pawapuri, meaning a town without sins, in the
+            India of Bihar, is a highly revered temple .
+            Actually it was built on pure ( soul) body of mahavir. this temple situated for jainsim.
+
+            Every year there are alot of jain come and visited this histrious palace.
+          </p>
+          <div class="test-item-info">
+            <img src="./images/t-2.jpg" alt="testimonial">
+            <div>
+              <h3>Jonas</h3>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="test-item">
+          <p class="text">
+            The most peaceful place in patna is "GANGA GHAT".
+
+            You will enjoy patna in durga puja and chat puja specially.
+
+            Both junction of patna is decorated with Led lights which looks so beautiful but not more than real one.
+
+            Patna is also becoming advance and over populated city like delhi / mumbai which because the people who
+            lives in village area come to patna in search of money and education.
+          </p>
+          <div class="test-item-info">
+            <img src="./images/t-3.jpg" alt="testimonial">
+            <div>
+              <h3>Harkirat</h3>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of testimonials section -->
+  <!-- footer -->
+  <footer class="py-4">
+    <div class="container footer-row">
+      <div class="footer-item">
+        <a href="index.html" class="site-brand"><img src="./images/bihar-logo.png" alt="bihar-logo">
+        </a>
+        <p class="text">
+          Bihar is a place full of history and spiritual significance. Located in the eastern part of India, this state
+          is known as the land of monasteries. There are many things that make this place worth visiting.
+        </p>
+      </div>
+      <div class="footer-item">
+        <h2>Follow us on:</h2>
+        <ul class="social-links">
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-pinterest"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h2>Popular Places:</h2>
+        <ul>
+          <li>
+            <a href="#">Nalanda</a>
+          </li>
+          <li>
+            <a href="#">Bodh Gaya</a>
+          </li>
+          <li>
+            <a href="#">Rajgir</a>
+          </li>
+          <li>
+            <a href="#">Patna</a>
+          </li>
+          <li>
+            <a href="#">Nawada</a>
+          </li>
+        </ul>
+      </div>
+      <div class="subscribe-form footer-item">
+        <h2>Subscribe for Newsletter!</h2>
+        <form class="flex">
+          <input type="email" placeholder="Enter Email" class="form-control">
+          <input type="submit" class="btn" value="Subscribe">
+        </form>
+      </div>
+    </div>
+  </footer>
+  <!-- end of footer -->
+  <!-- js -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
